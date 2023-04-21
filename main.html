@@ -12,39 +12,41 @@
 </script>
 
 	<form method="post">
-		<label>Name*</label>
-		<input type="text" required>
+		<label for="name">Name*</label>
+		<input type="text" required id="name" name="name" placeholder="Name">
 
-		<label>Email*</label>
-		<input type="email" required>
+		<label for="email">Email*</label>
+		<input type="email" required id="email" name="email" placeholder="Email">
 
-		<label>Gender*</label>
-		<input type="radio" required><label>Male</label>
-		<input type="radio" required><label>Female</label>
+		<label for="gender">Gender*</label>
+		<input type="radio" required name="gender" id="gender_m"><label>Male</label>
+		<input type="radio" required name="gender" id="gender_f"><label>Female</label>
 
 		<label for="car brands">Car Brands*</label>
-		<select name="car brands">
+		<select name="car brands" required id="cars">
+			<option>--Please choose an option--</option>
 			<option>BMW</option>
 			<option>Audi</option>
 			<option>Mercedez</option>
 		</select>
 
-		<label>Age*</label>
-		<input type="number">
+		<label for="age">Age*</label>
+		<input type="number" required id="age" name="age" placeholder="Age">
 
-		<label>DOB*</label>
-		<input type="date">
+		<label for="dob">DOB*</label>
+		<input type="date" required id="dob" name="dob">
 
-		<label>Phone Number</label>
-		<input type="number">
+		<label for="phone">Phone Number</label>
+		<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" placeholder="xxx-xxx-xxxx">
 
-		<label>Password*</label>
-		<input type="password">
+		<label for="password">Password*</label>
+		<input type="password" required id="password" name="password" placeholder="Password">
 
-		<input type="checkbox">
+		<input type="checkbox" id="tos" for="tos">
 		<label>I agree to the TOS.</label>
 
-		<input type="button" value="submit button">
+<!-- 		<input type="button" value="submit button"> -->
+		<button type="submit" value="submit button">submit button</button>
 	</form>
 </body>
 
